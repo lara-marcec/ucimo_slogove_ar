@@ -108,3 +108,7 @@ crashlytics-build.properties
 *.unitypackage
 *.unitypackage.meta
 *.app
+
+# Unity generated IL2CPP output
+/android/unityLibrary/src/main/Il2CppOutputProject/
+/unity/unityLibrary/src/main/Il2CppOutputProject/
