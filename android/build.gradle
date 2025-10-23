@@ -1,0 +1,49 @@
+allprojects {
+    repositories {
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+        kotlinOptions.jvmTarget = JavaVersion.VERSION_17
+    }
+    // make sure this is above any use of "evaluationDependsOn"
+    afterEvaluate {
+
+        if (project.plugins.hasPlugin("com.android.application")
+                || project.plugins.hasPlugin("com.android.library")) {
+
+            if (project.name == "ucimo_slogove_app") {
+                project.android {
+                    // add namespace if it is missing
+                    if (namespace == null) {
+                        namespace = project.group
+                    }
+                }
+                project.android.kotlinOptions {
+                    // if you change this value, also change it in android/app/build.gradle
+                    jvmTarget = JavaVersion.VERSION_17
+                }
+            }
+        }
+    }
+}
+
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
