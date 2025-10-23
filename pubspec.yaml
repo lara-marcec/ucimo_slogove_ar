@@ -1,0 +1,61 @@
+name: ucimo_slogove
+description: Učimo slogove.
+title: Učimo slogove
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 0.0.1+1
+
+environment:
+  sdk: ^3.1.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.0.0
+  audioplayers: ^6.0.0
+  shared_preferences: ^2.2.2
+  flutter_sound: ^9.4.6
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.2
+  url_launcher: ^6.2.6
+  flutter_unity_widget: ^2022.2.0
+  
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon_newversion.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icon/icon_newversion.png"
+    background_color: '#FFFFFF'
+    theme_color: '#FFFFFF'
+  windows:
+    generate: true
+    image_path: "assets/icon/icon_newversion.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icon/icon_newversion.png"
+
+flutter:
+  uses-material-design: true
+  assets: 
+    - assets/sounds/
+    - assets/images/
+
+  fonts: 
+  - family: Tahoma
+    fonts:
+    - asset: assets/font/TAHOMA.ttf
+ 
+

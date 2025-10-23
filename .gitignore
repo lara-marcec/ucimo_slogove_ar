@@ -1,0 +1,110 @@
+# =========================
+# GENERAL / MISC
+# =========================
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# =========================
+# IDEs
+# =========================
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Rider
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Visual Studio
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# VS Code - keep launch.json but ignore workspace settings
+.vscode/settings.json
+.vscode/tasks.json
+
+# =========================
+# FLUTTER / DART
+# =========================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+
+# =========================
+# UNITY
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Asset Store tools (optional)
+/[Aa]ssets/AssetStoreTools*
+
+# Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# StreamingAssets temp
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# =========================
+# ANDROID / GRADLE
+# =========================
+.gradle/
+android/app/debug
+android/app/profile
+android/app/release
+*.apk
+*.aab
+
+# =========================
+# MISC / SYMBOLS / MAPS
+# =========================
+app.*.symbols
+app.*.map.json
+crashlytics-build.properties
+
+# =========================
+# PACKAGE / EXPORT FILES
+# =========================
+*.unitypackage
+*.unitypackage.meta
+*.app
